@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ItalOpti | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg ital-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" height="30" alt="ItalOpti Logo" />
+        </a>
+        <button class="ital-menu-toggle d-lg-none" id="menuToggle">☰</button>
+        <div
+          class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+        >
+          <ul class="navbar-nav ital-nav-links">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown ital-dropdown">
+              <a class="nav-link" href="brands-all.html">Brands ▾</a>
+              <div class="ital-dropdown-menu">
+                <a href="jmm.html">Jacques Marie Mage</a>
+                <a href="matsuda.html">Matsuda</a>
+                <a href="thombrowne.html">Thom Browne</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="retailers.html">Our Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="contact.html" class="ital-nav-logo-btn">
+            <img src="images/enquire-icon.png" alt="Enquire" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="ital-mobile-menu" id="mobileMenu">
+      <!-- Close Button -->
+      <button class="ital-close-btn" id="closeMenu">✕</button>
+      <div class="ital-mobile-inner">
+        <ul class="ital-mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <!-- Mobile Dropdown -->
+          <li class="ital-mobile-dropdown">
+            <span>Brands ▾</span>
+            <div class="ital-mobile-submenu">
+              <a href="jmm.html">Jacques Marie Mage</a>
+              <a href="matsuda.html">Matsuda</a>
+              <a href="thombrowne.html">Thom Browne</a>
+            </div>
+          </li>
+          <li><a href="retailers.html">Our Approach</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="ital-hero">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <!-- LEFT -->
+          <div class="col-lg-6 ital-hero-left">
+            <div class="ital-hero-inner">
+              <div class="ital-hero-content">
+                <!-- ONLY TITLE SLIDER -->
+                <div
+                  id="italHeroSlider"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="5000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h1 class="ital-title">
+                        Curated<br />
+                        <em>luxury</em> delivered<br />
+                        with intent.
+                      </h1>
+                    </div>
+
+                    <div class="carousel-item">
+                      <h1 class="ital-title">
+                        Crafted<br />
+                        for those who<br />
+                        value <em>detail.</em>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIXED DESCRIPTION -->
+                <p class="ital-desc">
+                  ItalOpti develops carefully curated eyewear brands through
+                  selective distribution, disciplined retail execution, and
+                  long-term market partnerships across India.
+                </p>
+
+                <!-- FIXED BUTTONS -->
+                <div class="ital-actions">
+                  <a href="brands-all.html" class="ital-btn-primary">
+                    Explore Brands
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div
+            class="col-lg-6 ital-hero-right d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="images/home-banner.png"
+              class="img-fluid ital-hero-img"
+              alt="Luxury Eyewear"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="ital-stats">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-4 col-lg-4 ital-stat-item">
+            <div class="ital-stat-icon"><i class="bi bi-people"></i></div>
+            <h2 class="ital-stat-number" data-count="100" data-suffix="+">0</h2>
+            <p class="ital-stat-label">Retail Partners</p>
+          </div>
+          <div class="col-4 col-lg-4 ital-stat-item">
+            <div class="ital-stat-icon"><i class="bi bi-eyeglasses"></i></div>
+            <h2 class="ital-stat-number" data-count="3">0</h2>
+            <p class="ital-stat-label">Curated Brands</p>
+          </div>
+          <div class="col-4 col-lg-4 ital-stat-item">
+            <div class="ital-stat-icon"><i class="bi bi-geo-alt"></i></div>
+            <h2 class="ital-stat-number" data-count="12">0</h2>
+            <p class="ital-stat-label">Cities Served</p>
+          </div>
+          <!--
+      <div class="col-6 col-lg-3 ital-stat-item">
+        <div class="ital-stat-icon"><i class="bi bi-award"></i></div>
+        <h2 class="ital-stat-number" data-count="10">0</h2>
+        <p class="ital-stat-label">Years of Excellence</p>
+      </div>
+-->
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="ital-portfolio">
+      <div class="container-fluid px-0">
+        <p class="ital-section-label ital-portfolio-label">Our Portfolio</p>
+
+        <div class="ital-portfolio-grid">
+          <!-- JMM -->
+          <div
+            class="ital-portfolio-card"
+            onclick="showPage('brand-jmm', null)"
+          >
+            <img src="images/JMM.png" alt="JMM" class="ital-portfolio-logo" />
+
+            <p class="ital-portfolio-location">Los Angeles, USA</p>
+
+            <span class="ital-portfolio-link">
+              <a href="jmm.html" class="ital-portfolio-link">
+                Explore →</a
+              >
+            </span>
+          </div>
+
+          <!-- MATSUDA -->
+          <div
+            class="ital-portfolio-card ital-portfolio-dark"
+            onclick="showPage('brand-matsuda', null)"
+          >
+            <img
+              src="images/MATSUDA.png"
+              alt="Matsuda"
+              class="ital-portfolio-logo"
+            />
+
+            <p class="ital-portfolio-location ital-portfolio-location-dark">
+              Sabae, Japan
+            </p>
+
+            <span class="ital-portfolio-link ital-portfolio-link-dark">
+              <a href="matsuda.html" class="ital-portfolio-link">Explore →</a>
+            </span>
+          </div>
+
+          <!-- THOM BROWNE -->
+          <div
+            class="ital-portfolio-card"
+            onclick="showPage('brand-thombrowne', null)"
+          >
+            <img
+              src="images/thom.png"
+              alt="Thom Browne"
+              class="ital-portfolio-logo"
+            />
+
+            <p class="ital-portfolio-location">New York, USA</p>
+
+            <span class="ital-portfolio-link">
+              <a href="thombrowne.html" class="ital-portfolio-link"
+                >Explore →</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="ital-what">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 ital-what-left">
+            <p class="ital-section-label">What We Do</p>
+            <h2 class="ital-what-title">
+              Precision at every<br />
+              <em>touchpoint.</em>
+            </h2>
+            <p class="ital-what-desc">
+              We act as a brand custodian for eyewear houses that require
+              controlled placement, elevated presentation, and consistent retail
+              execution.
+            </p>
+            <a href="about.html" class="ital-btn-primary">Our Story</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="ital-what-grid">
+              <div class="ital-box light">
+                <span class="ital-value-num">01</span>
+                <h5>Curation</h5>
+                <p>
+                  A concise portfolio selected for design integrity, market
+                  relevance, and long-term positioning.
+                </p>
+              </div>
+              <div class="ital-box dark">
+                <span class="ital-value-num">02</span>
+                <h5>Selective Distribution</h5>
+                <p>
+                  Controlled placement across carefully selected retail
+                  partners.
+                </p>
+              </div>
+              <div class="ital-box dark">
+                <span class="ital-value-num">03</span>
+                <h5>Brand Development</h5>
+                <p>
+                  Visual merchandising, training, market activation, and retail
+                  discipline.
+                </p>
+              </div>
+              <div class="ital-box light">
+                <span class="ital-value-num">04</span>
+                <h5>Partnership</h5>
+                <p>
+                  Long-term alignment with brands and retailers, built around
+                  sustainable growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="ital-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-md-start text-center">
+            <img
+              src="images/logo.png"
+              class="ital-footer-logo"
+              alt="ItalOpti"
+            />
+          </div>
+          <div class="col-md-6 text-center">
+            <ul class="ital-footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="brands-all.html">Brands</a></li>
+              <li><a href="retailers.html">Our Approach</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-md-end text-center">
+            <p class="ital-footer-copy m-0">© 2026 ItalOpti</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const toggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("mobileMenu");
+      const closeBtn = document.getElementById("closeMenu");
+
+      /* OPEN MENU */
+      toggle?.addEventListener("click", () => {
+        menu.classList.add("active");
+      });
+
+      /* CLOSE MENU */
+      closeBtn?.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+
+      /* MOBILE BRANDS DROPDOWN */
+      const mobileDropdown = document.querySelector(".ital-mobile-dropdown");
+      const mobileSubmenu = document.querySelector(".ital-mobile-submenu");
+
+      mobileDropdown?.addEventListener("click", function () {
+        this.classList.toggle("open");
+      });
+    </script>
+    <script>
+      const counters = document.querySelectorAll(".ital-stat-number");
+
+      let started = false;
+
+      function startCounter() {
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-count");
+
+          const suffix = counter.getAttribute("data-suffix") || "";
+
+          let count = 0;
+
+          const increment = target / 80;
+
+          const update = () => {
+            count += increment;
+
+            if (count < target) {
+              counter.innerText = Math.floor(count) + suffix;
+
+              requestAnimationFrame(update);
+            } else {
+              counter.innerText = target + suffix;
+            }
+          };
+
+          update();
+        });
+      }
+
+      window.addEventListener("scroll", () => {
+        const section = document.querySelector(".ital-stats");
+
+        if (!section) return;
+
+        const sectionTop = section.offsetTop - window.innerHeight + 100;
+
+        if (!started && window.scrollY > sectionTop) {
+          startCounter();
+
+          started = true;
+        }
+      });
+    </script>
+  </body>
+</html>
