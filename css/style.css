@@ -374,6 +374,10 @@ h1, h2, h3, .ital-title {
   .ital-badge {
     display: none;
   }
+  .ital-hero-inner {
+  padding: 0px; /* âœ… EXACT as you want */
+  width: 100%;
+}
 }
 .ital-btn-primary {
   background: var(--truffle);
