@@ -3303,3 +3303,16 @@ font-size: 14px;
     font-size: 32px;
   }
 }
+.ital-director-right
+ {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+.ital-director-content {
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
