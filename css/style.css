@@ -2385,21 +2385,82 @@ font-size: 14px;
   color: #7f8897;
 }
 @media (max-width: 991px) {
-  .ital-thom-left, .ital-thom-right {
+
+  .ital-thom-left,
+  .ital-thom-right {
+
     min-height: auto;
+
     padding: 70px 25px;
   }
+
   .ital-thom-title {
+
     font-size: 52px;
   }
+
+  /* FIX PRODUCT LAYOUT */
   .ital-thom-products {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .ital-thom-product-image {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
     width: 100%;
-    max-width: 320px;
-    height: 420px;
+  }
+
+  /* PRODUCT */
+  .ital-thom-product {
+
+    flex: 1;
+
+    min-width: 0;
+  }
+
+  /* IMAGE BOX */
+  .ital-thom-product-image {
+
+    width: 100%;
+
+    height: 240px;
+
+    max-width: none;
+
+    overflow: hidden;
+  }
+
+  /* IMAGE */
+  .ital-thom-product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+  /* LABEL */
+  .ital-thom-product-label {
+
+    margin-top: 14px;
+
+    text-align: center;
+  }
+
+  /* LOGO */
+  .ital-thom-logo {
+
+    max-width: 100%;
+
+    height: auto;
   }
 }
 /* =========================
