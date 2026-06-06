@@ -255,6 +255,36 @@ h1, h2, h3, .ital-title {
 .ital-nav-logo-btn:hover img {
   filter: brightness(0) invert(1);
 }
+/* MOBILE INNER */
+.ital-mobile-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* ENQUIRE BUTTON WRAP */
+.ital-mobile-enquire {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* BUTTON */
+.ital-mobile-enquire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICON */
+.ital-mobile-enquire-btn img {
+  width: 52px;
+  height: auto;
+  display: block;
+}
 /* ===============================
    PRIMARY BUTTON
 ================================ */
@@ -1056,6 +1086,68 @@ h1, h2, h3, .ital-title {
     padding: 20px 0;
   }
 }
+/* BRANDS HERO*/
+.ital-brands-hero {
+    background: var(--truffle);
+    color: var(--porcelain);
+    overflow: hidden;
+}
+.ital-brands-hero .row {
+    align-items: center;
+    min-height: 720px;
+}
+.ital-brands-hero-left {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.ital-brands-hero-right {
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+}
+.ital-brands-hero-left .ital-btn-primary {
+
+  width: fit-content;
+
+  align-self: flex-start;
+}
+.ital-brands-hero-left .ital-about-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+/* IMAGE WRAP */
+.ital-brands-hero-right {
+
+  width: 100%;
+
+  height: 720px;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+.ital-brands-hero-right img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+}
+/* PREVENT BUTTON STRETCH */
+.retailer-right {
+      padding: 80px 15px !important;
+}
 /* SECTION */
 .ital-retailer {
 
@@ -1064,14 +1156,6 @@ h1, h2, h3, .ital-title {
   color: var(--porcelain);
 
   overflow: hidden;
-}
-
-/* ROW */
-.ital-retailer .row {
-
-  align-items: center;
-
-  min-height: 720px;
 }
 
 /* LEFT */
@@ -1118,45 +1202,34 @@ h1, h2, h3, .ital-title {
   margin: 0;
 }
 
-/* IMAGE WRAP */
-.ital-retailer-banner {
 
-  width: 100%;
-
-  height: 720px;
-
-  overflow: hidden;
+/* DASH */
+.ital-retailer-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--sepia);
+}
+.ital-retailer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.ital-retailer-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(173, 155, 134, 0.3);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--sepia);
+  position: relative;
+  padding-left: 20px;
 }
 
-/* IMAGE */
-.ital-retailer-banner img {
-
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: cover;
-
-  object-position: center;
-
-  display: block;
-}
-/* PREVENT BUTTON STRETCH */
-.ital-retailer-left .ital-btn-primary {
-
-  width: fit-content;
-
-  align-self: flex-start;
-}
-.ital-retailer-left .ital-about-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 64px;
-    line-height: 1.1;
-    font-weight: 300;
-    margin-bottom: 25px;
-}
 /* MOBILE */
 @media (max-width: 991px) {
+  .ital-brands-hero-left {
+    padding: 80px 50px;
+  }
 
   .ital-retailer .row {
 
