@@ -720,25 +720,13 @@ h1, h2, h3, .ital-title {
 }
 
 /* LEFT CONTENT */
-.ital-founders-content {
-
-  max-width: 720px;
-}
-
 /* LEFT TEXT */
 .ital-founders-content .ital-desc {
-
   font-size: 15px;
-
   line-height: 2;
-
   color: var(--walnut);
-
   font-weight: 300;
-
   margin-top: 28px;
-
-  max-width: 680px;
 }
 
 /* RIGHT GRID */
