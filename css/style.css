@@ -391,6 +391,9 @@ h1, h2, h3, .ital-title {
   cursor: pointer;
 }
 @media (max-width: 991px) {
+  #italHeroSlider {
+    min-height: 180px;
+  }
   .ital-hero-left {
     padding: 60px 20px;
   }
@@ -912,7 +915,7 @@ h1, h2, h3, .ital-title {
 
     white-space: normal;
 
-    font-size: 28px;
+    font-size: 21px;
 
     line-height: 1.4;
   }
@@ -920,6 +923,9 @@ h1, h2, h3, .ital-title {
   .ital-founder-location {
 
     letter-spacing: 0.18em;
+  }
+  .ital-director-content {
+    padding: 40px 0px 0px 0px !important;
   }
 }
 /* ========================================
