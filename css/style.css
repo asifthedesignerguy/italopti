@@ -499,7 +499,6 @@ h1, h2, h3, .ital-title {
   justify-content: center;
   text-align: center;
   transition: all 0.35s ease;
-  cursor: pointer;
 }
 /* DARK CARD */
 .ital-portfolio-dark {
@@ -800,7 +799,7 @@ h1, h2, h3, .ital-title {
 /* CARD */
 .ital-founder-card {
 
-      padding: 35px 30px;
+      padding: 35px 15px;
     min-height: 140px;
 
   display: flex;
@@ -1167,7 +1166,7 @@ h1, h2, h3, .ital-title {
 /* LEFT */
 .ital-retailer-left {
 
-  padding: 80px 100px;
+  padding: 80px 0px;
 
   display: flex;
 
@@ -3100,7 +3099,7 @@ font-size: 14px;
 .ital-brand-card {
   background: var(--porcelain);
   border: 1px solid rgba(173, 155, 134, 0.35);
-  cursor: pointer;
+ 
   transition: all 0.35s ease;
   height: 100%;
 }
@@ -3503,7 +3502,7 @@ font-size: 14px;
 }
 .ital-director-content {
     width: 100%;
-    padding: 40px 0px;
+    padding: 60px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -40,11 +40,20 @@
     <ul class="ital-mobile-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      
       <!-- Mobile Dropdown -->
-      <li class="ital-mobile-dropdown"> <a href="brands-all.html"><span>Portfolio ▾</span></a>
-        <div class="ital-mobile-submenu"> <a href="jmm.html">Jacques Marie Mage</a> <a href="matsuda.html">Matsuda</a> <a href="thombrowne.html">Thom Browne</a> </div>
-      </li>
+      <li class="ital-mobile-dropdown">
+
+  <a href="brands-all.html" class="ital-mobile-dropdown-toggle">
+    <span>Portfolio ▾</span>
+  </a>
+
+  <div class="ital-mobile-submenu">
+    <a href="jmm.html">Jacques Marie Mage</a>
+    <a href="matsuda.html">Matsuda</a>
+    <a href="thombrowne.html">Thom Browne</a>
+  </div>
+
+</li>
       <li><a href="retailers.html">Our Approach</a></li>
       <li><a href="brands.html">For Brands</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -99,7 +108,7 @@
 
 </section>
 <section class="ital-values py-5">
-  <div class="container">
+  <div class="container px-0">
     <p class="ital-section-label">Capability Platform</p>
             <h2 class="ital-what-title">
               From market entry to<br>
@@ -266,6 +275,41 @@ window.addEventListener('scroll', () => {
     started = true;
   }
 });
+</script>
+<script>
+
+document.querySelectorAll('.ital-mobile-dropdown-toggle').forEach(toggle => {
+
+  let clickedOnce = false;
+
+  toggle.addEventListener('click', function(e) {
+
+    const parent = this.closest('.ital-mobile-dropdown');
+
+    /* FIRST CLICK */
+    if (!clickedOnce) {
+
+      e.preventDefault();
+
+      parent.classList.add('open');
+
+      clickedOnce = true;
+
+      /* RESET */
+      setTimeout(() => {
+
+        clickedOnce = false;
+
+      }, 3000);
+
+    }
+
+    /* SECOND CLICK = NORMAL LINK */
+
+  });
+
+});
+
 </script>
 </body>
 </html>

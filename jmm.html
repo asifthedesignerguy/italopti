@@ -46,11 +46,20 @@
     <ul class="ital-mobile-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      
       <!-- Mobile Dropdown -->
-      <li class="ital-mobile-dropdown"> <a href="brands-all.html"><span>Portfolio ▾</span></a>
-        <div class="ital-mobile-submenu"> <a href="jmm.html">Jacques Marie Mage</a> <a href="matsuda.html">Matsuda</a> <a href="thombrowne.html">Thom Browne</a> </div>
-      </li>
+      <li class="ital-mobile-dropdown">
+
+  <a href="brands-all.html" class="ital-mobile-dropdown-toggle">
+    <span>Portfolio ▾</span>
+  </a>
+
+  <div class="ital-mobile-submenu">
+    <a href="jmm.html">Jacques Marie Mage</a>
+    <a href="matsuda.html">Matsuda</a>
+    <a href="thombrowne.html">Thom Browne</a>
+  </div>
+
+</li>
       <li><a href="retailers.html">Our Approach</a></li>
       <li><a href="brands.html">For Brands</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -136,12 +145,15 @@
 <!--    <div class="ital-jmm-item ital-jmm-big"> <img src="images/JMM_IG_GRID_071.jpg" alt="Campaign"> </div>-->
     
     <!-- SMALL IMAGES -->
-    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_201.jpg" alt=""> </div>
-    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_181.jpg" alt=""> </div>
-    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_202.jpg" alt=""> </div>
     <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_082.jpg" alt=""> </div>
-	<div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_CENT.jpg" alt=""> </div>
+    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_181.jpg" alt=""> </div>
     <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_083.jpg" alt=""> </div>
+
+
+    
+    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_201.jpg" alt=""> </div>
+	<div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_CENT.jpg" alt=""> </div>
+    <div class="ital-jmm-item"> <img src="images/JMM_IG_GRID_202.jpg" alt=""> </div>
   </div>
 </section>
 
@@ -215,13 +227,40 @@ closeBtn?.addEventListener('click', () => {
   menu.classList.remove('active');
 });
 
-/* MOBILE BRANDS DROPDOWN */
-const mobileDropdown = document.querySelector('.ital-mobile-dropdown');
-const mobileSubmenu = document.querySelector('.ital-mobile-submenu');
 
-mobileDropdown?.addEventListener('click', function () {
 
-  this.classList.toggle('open');
+</script>
+<script>
+
+document.querySelectorAll('.ital-mobile-dropdown-toggle').forEach(toggle => {
+
+  let clickedOnce = false;
+
+  toggle.addEventListener('click', function(e) {
+
+    const parent = this.closest('.ital-mobile-dropdown');
+
+    /* FIRST CLICK */
+    if (!clickedOnce) {
+
+      e.preventDefault();
+
+      parent.classList.add('open');
+
+      clickedOnce = true;
+
+      /* RESET */
+      setTimeout(() => {
+
+        clickedOnce = false;
+
+      }, 3000);
+
+    }
+
+    /* SECOND CLICK = NORMAL LINK */
+
+  });
 
 });
 
