@@ -135,6 +135,15 @@ h1, h2, h3, .ital-title {
   background: none;
   font-size: 22px;
   cursor: pointer;
+  color: var(--truffle) !important;
+}
+.ital-menu-toggle:hover,
+.ital-menu-toggle:focus,
+.ital-menu-toggle:active {
+  color: var(--truffle) !important;
+  background: transparent !important;
+  outline: none;
+  box-shadow: none;
 }
 /* ===============================
    MOBILE MENU
